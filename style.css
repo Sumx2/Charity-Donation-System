@@ -44,8 +44,8 @@ button:hover {
     margin-top: 20px;
     text-align: center;
 } */
- */
-
+*/
+/* 
 * {
     margin: 0;
     padding: 0;
@@ -111,4 +111,145 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+} */
+
+
+/* General Reset and Font Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    /* Use dark text for better readability */
+}
+
+/* Navbar Styling */
+nav {
+    background: #444;
+    /* Darker background for better contrast */
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6363;
+    /* Lighter hover effect */
+}
+
+/* Hero Section Styling */
+.hero {
+    background: url('charity.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    /* Changed to darker shade for contrast */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Light background overlay */
+}
+
+.hero-content {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: slideDown 1.5s ease;
+    color: #222;
+    /* Darker text */
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #555;
+    /* Medium dark text for better readability */
+}
+
+.btn {
+    background: #ff6363;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+    background: #e55353;
+    transform: translateY(-5px);
+}
+
+/* Footer Styling */
+footer {
+    background: #444;
+    /* Darker footer for contrast */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
