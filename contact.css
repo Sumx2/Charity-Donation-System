@@ -68,7 +68,8 @@ nav ul li a:hover {
     font-size: 16px;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
     margin-top: 5px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -116,6 +117,7 @@ footer p:hover {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
