@@ -76,3 +76,19 @@ nav ul li a:hover {
 #donationHistoryTable tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer p:hover {
+    color: #ff6363;
+}
