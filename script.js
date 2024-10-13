@@ -1,6 +1,7 @@
 document.getElementById('donationForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission from refreshing the page
 
+    // Get form values
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const donationAmount = document.getElementById('amount').value;

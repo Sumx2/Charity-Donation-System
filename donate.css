@@ -14,19 +14,23 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-evenly; /* Evenly spaces items across the navbar */
+    align-items: center; /* Vertically center the items */
     text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
+
 
 .donation-form {
     background-color: white;
