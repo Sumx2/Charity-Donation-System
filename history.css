@@ -1,0 +1,78 @@
+/* Add this to style.css */
+
+/* Navbar styling - You already have this */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+/* Animation for the Donation History Section */
+.history-section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#donationHistoryTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInTable 1.5s ease-out forwards;
+}
+
+@keyframes fadeInTable {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#donationHistoryTable th, #donationHistoryTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#donationHistoryTable th {
+    background-color: #f0a500;
+    color: white;
+}
+
+#donationHistoryTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
